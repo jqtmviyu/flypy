@@ -1,7 +1,16 @@
+# 小鹤飞扬 rime 配置
+
 ## 环境
 
-rime版本: 0.16.2
+鼠鬚管版本: 0.16.2
 词库版本版本：10.6.4
+系统: macos 12.7
+
+## 引用文件
+
+https://github.com/cubercsl/rime-flypy
+
+http://flypy.ys168.com
 
 ## 改动地方
 
@@ -15,6 +24,7 @@ rime版本: 0.16.2
 patch:
   schema_list:
     - schema: flypy # 添加小鹤音形
+    - schema: flypydz # 添加反查码表
   switcher/hotkeys: false # 定製喚出方案選單的快捷鍵, 默认是ctrl + `或者f4
     # - "Control+grave"  # 你看寫法並不是 Ctrl+` 而是與 IBus 一致的表示法
     # - F4
