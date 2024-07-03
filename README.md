@@ -58,3 +58,7 @@ reset: 1
 https://flypy.cc	orm
 http://react.xhup.club/search	ofi
 ```
+
+4. `squirrel.custom.yaml`
+
+屏蔽了vscode的vim模式,因为有其他切换中英文的软件更加好用.
