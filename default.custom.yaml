@@ -5,7 +5,7 @@ customization:
 patch:
   schema_list:
     - schema: flypy # 添加小鹤音形
-    - schema: flypydz # 反查码表
+    - - schema: flypydz # 反查码表
   switcher/hotkeys: false # 定製喚出方案選單的快捷鍵, 默认是ctrl + `或者f4
     # - "Control+grave"  # 你看寫法並不是 Ctrl+` 而是與 IBus 一致的表示法
     # - F4

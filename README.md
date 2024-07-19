@@ -20,7 +20,7 @@ http://flypy.ys168.com
 
 屏蔽半角全角切换
 
-```
+```yml
 patch:
   schema_list:
     - schema: flypy # 添加小鹤音形
@@ -42,7 +42,7 @@ patch:
 
 屏蔽半角全角切换
 
-```
+```yaml
 - name: ascii_punct # 中英文符号
 # states: [ 。，, ．， ]
 reset: 1
@@ -54,11 +54,19 @@ reset: 1
 
 添加在线反查, 修改入门网址
 
-```
+```yaml
 https://flypy.cc	orm
 http://react.xhup.club/search	ofi
 ```
 
-4. `squirrel.custom.yaml`
+4. ``squirrel.custom.yaml`:
 
-屏蔽了vscode的vim模式,因为有其他切换中英文的软件更加好用.
+屏蔽vscode的西文模式和vim模式
+
+```yaml
+patch:
+  "app_options":
+    com.microsoft.VSCode:
+      ascii_mode: false  # 初始爲西文模式
+      vim_mode: false    # 退出VIM插入模式自動切換輸入法狀態s
+```
