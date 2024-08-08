@@ -16,14 +16,14 @@ punctuator:
 switches:
   - name: ascii_mode
     reset: 0
-   # states: [ 中文, 英文 ]
+  #  states: [ 中文, 英文 ]
   - name: full_shape
-   # states: [ 半角, 全角 ]
+  #  states: [ 半角, 全角 ]
   - name: simplification
-   # states: [ 简, 繁 ]
+  #  states: [ 简, 繁 ]
     reset: 0
   - name: ascii_punct
-   # states: [ 。，, ．， ]
+  #  states: [ 。，, ．， ]
     reset: 1
 
 engine:
@@ -77,13 +77,12 @@ translator:
   enable_user_dict: false
   disable_user_dict_for_patterns:
     - "^z.*$"
- 
 
 history:
-   input: ;f
-   size: 1 #重复前几次上屏
-   initial_quality: 1 #首选
-   
+  input: ;f
+  size: 1 #重复前几次上屏
+  initial_quality: 1 #首选
+
 simplification:
   opencc_config: s2tw.json
   option_name: simplification
@@ -96,7 +95,7 @@ custom_phraseVD:
   enable_sentence: false
   enable_completion: false
   initial_quality: 0 #用户词和系统词重码 置顶
-  
+
 custom_phraseXT:
   dictionary: ""
   user_dict: flypy_sys
@@ -112,7 +111,7 @@ custom_phraseYH:
   enable_sentence: false
   enable_completion: false
   initial_quality: -1 #用户词和系统词重码居后
-  
+
 custom_phraseQMZ:
   dictionary: ""
   user_dict: flypy_full
@@ -121,11 +120,19 @@ custom_phraseQMZ:
   enable_completion: false
   initial_quality: -1 #和系统词重码时居后
 
+custom_phraseBWZ:
+  dictionary: ""
+  user_dict: flypy_extra
+  db_class: stabledb
+  enable_sentence: false
+  enable_completion: false
+  initial_quality: -1 #和系统词重码时居后
+
 reverse_lookup:
   dictionary: flypydz
   comment_format:
-   # - xform/^/〔/
-   # - xform/$/〕/
+  #  - xform/^/〔/
+  #  - xform/$/〕/
     - xform/ / /
 
 
@@ -157,7 +164,6 @@ recognizer:
 
 menu:
   page_size: 5 #候选项数
-  
+
 style:
   horizontal: true #竖排为false
-  

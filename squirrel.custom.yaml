@@ -5,7 +5,7 @@ customization:
   modified_time: "2019-06-23"
   rime_version: 1.5.3
 patch:
-  "preset_color_schemes/metro": 
+  "preset_color_schemes/metro":
     author: "flypy.com"
     back_color: 0xffffff                    # 候选条背景色
     border_color_width: 1

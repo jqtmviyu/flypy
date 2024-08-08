@@ -1,10 +1,15 @@
-# 小鹤飞扬 rime 配置
+# 小鹤飞扬 rime 开源配置
+
+> 小鹤官方网盘提供的rime挂接方案中的主码表和反查码表只提供了编译后的
+> 用网友反编译文件替代了, 就算是删掉build目录也能重新部署
 
 ## 环境
 
 鼠鬚管版本: 0.16.2  
 词库版本：10.6.4  
 系统: macos 12.7  
+
+10.6.5 之后增加了一简词, 感觉没必要更新了.
 
 ## 引用文件
 
@@ -59,7 +64,7 @@ https://flypy.cc	orm
 http://react.xhup.club/search	ofi
 ```
 
-4. ``squirrel.custom.yaml`:
+4. `squirrel.custom.yaml`:
 
 屏蔽vscode的西文模式和vim模式
 
@@ -70,3 +75,7 @@ patch:
       ascii_mode: false  # 初始爲西文模式
       vim_mode: false    # 退出VIM插入模式自動切換輸入法狀態s
 ```
+
+5. `flypy_extra.txt`
+
+从多多版`10.9y`中导出的表外字,需要启用的话放到目录外重新部署
