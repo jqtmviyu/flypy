@@ -1,11 +1,6 @@
-customization:
-  distribution_code_name: Squirrel
-  distribution_version: 2019-06-23
-  rime_version: 1.5.3
 patch:
   schema_list:
     - schema: flypy # 添加小鹤音形
-    - schema: flypydz # 反查码表
   switcher/hotkeys: false # 定製喚出方案選單的快捷鍵, 默认是ctrl + `或者f4
     # - "Control+grave"  # 你看寫法並不是 Ctrl+` 而是與 IBus 一致的表示法
     # - F4
@@ -28,7 +23,7 @@ patch:
   ascii_composer/good_old_caps_lock: true
   ascii_composer/switch_key:
     Caps_Lock: noop
-    Shift_L: commit_code
+    Shift_L: noop
     Shift_R: noop
     Control_L: noop
     Control_R: noop

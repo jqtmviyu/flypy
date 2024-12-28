@@ -40,3 +40,9 @@ patch:
     com.microsoft.VSCode:
       ascii_mode: false  # 初始爲西文模式
       vim_mode: false    # 退出VIM插入模式自動切換輸入法狀態
+    com.google.Chrome:
+      # 規避 https://github.com/rime/squirrel/issues/435
+      inline: true
+    ru.keepcoder.Telegram:
+      # 規避 https://github.com/rime/squirrel/issues/475
+      inline: true
