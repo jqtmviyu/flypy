@@ -1,9 +1,11 @@
 # 随心   自定编码规则，零星调节重码或别扭码
+
 ---
 name: flypy.whimsicality
-version: "10.9z"
+version: "10.9.4"
 use_preset_vocabulary: false
 ...
+
 单元	dye
 记忆	jyx
 指挥	vhf
@@ -25,4 +27,4 @@ use_preset_vocabulary: false
 计	jiyd
 辨	bmld
 辫	bmls
-刻意	kys
+东	dsh

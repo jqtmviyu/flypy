@@ -1,9 +1,11 @@
 # 微信表情
+
 ---
 name: flypy.wechat
-version: "10.9z"
+version: "10.9.4"
 use_preset_vocabulary: false
 ...
+
 [破涕为笑]	owxk
 [合十]	owbt
 [微笑]	owwx

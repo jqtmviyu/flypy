@@ -7,8 +7,10 @@
 ## 环境
 
 鼠鬚管版本: 0.16.2  
-词库版本：10.9.z  
+词库版本：10.9.4  
 系统: macos 12.7  
+
+10.9.5增加了一简词，并且把"发"从fav改为f1, "非"改为f2, 用不惯
 
 ## 引用文件
 
@@ -62,9 +64,7 @@ http://flypy.ys168.com
 
 ```yml
 https://flypy.cc	orm
-[入门]	orm
 http://react.xhup.club/search	ofi
-[反查]	ofi
 ```
 
 ### `squirrel.custom.yaml`
@@ -79,8 +79,8 @@ patch:
       vim_mode: false    # 退出VIM插入模式自動切換輸入法狀態s
 ```
 
-### `flypy.dict.yaml`
+### todo
 
-开启了二重简码, 关闭了一码词.
+下载到10.9.4版本的widows安装包，尽量统一词库
 
-如果是windows系统想统一词库, 则下载10.9.z版本(没找到,只保留了10.9.y), 打开设置里的码表, 清空自带的用户词库(对应的一码词)
+单字和词库除了错误，不再增添，锁版本。

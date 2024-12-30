@@ -1,9 +1,11 @@
 # 快符
+
 ---
 name: flypy.fast.symbols
-version: "10.9z"
+version: "10.9.4"
 use_preset_vocabulary: false
 ...
+
 ：	;
 ；	;
 ：“	;q

@@ -1,9 +1,11 @@
 # 三码填空
+
 ---
 name: flypy.three
-version: "10.9z"
+version: "10.9.4"
 use_preset_vocabulary: false
 ...
+
 截个屏	jgp
 截个图	jgt
 风嗖嗖	fss
@@ -235,7 +237,6 @@ AA制	aav
 不便宜	bpy
 别再	bpz
 不确定	bqd
-不奇怪	bqg
 不清楚	bqi
 白切鸡	bqj
 冰淇淋	bql
@@ -336,7 +337,6 @@ AA制	aav
 不撞南墙不回头	bvn
 被虐	bwn
 北欧	bwo
-避孕套	byt
 不做亏心事	bzk
 擦边	cab
 擦汗	cah
@@ -915,7 +915,7 @@ AA制	aav
 纷纷	fff
 分成	ffi
 愤怒	ffn
-分批	ffp
+分配	ffp
 分组	ffz
 风格	fgg
 奉陪	fgp
@@ -1365,7 +1365,7 @@ AA制	aav
 怀古	hkg
 黑科技	hkj
 坏了	hkl
-怀念	hkn
+很可能	hkn
 坏人	hkr
 坏事	hku
 怀中	hkv
@@ -1818,7 +1818,7 @@ AA制	aav
 几十年	jun
 就知道	jvd
 鸡爪疯	jvf
-价值观	jvg
+九寨沟	jvg
 镜中花	jvh
 假正经	jvj
 急诊科	jvk
@@ -1855,6 +1855,7 @@ AA制	aav
 金字塔	jzt
 箭在弦上，不得不发	jzx
 就在于	jzy
+紧挨	jba
 鸡蛋碰石头	jdp
 疾风扫落叶	jfs
 久旱逢甘霖	jhf
@@ -2114,6 +2115,7 @@ AA制	aav
 可望而不可即	kwe
 跨排	kxp
 昆曲	kyq
+困死	kys
 口岸	kza
 扣肉	kzr
 口算	kzs
@@ -2236,7 +2238,7 @@ AA制	aav
 乱窜	lrc
 乱发	lrf
 乱搞	lrg
-乱吃	lri
+卵巢	lri
 利润率	lrl
 乱码	lrm
 乱套	lrt
@@ -2435,7 +2437,6 @@ AA制	aav
 面庞	mmp
 面前	mmq
 面容	mmr
-棉袜	mmw
 面子	mmz
 秒表	mnb
 慕尼黑	mnh
@@ -4159,7 +4160,7 @@ AA制	aav
 折算	ves
 这种	vev
 这位	vew
-这下	vex
+哲学	vex
 珍贵	vfg
 真能	vfn
 振作	vfz
@@ -4389,7 +4390,6 @@ AA制	aav
 五个月	wgy
 五个字	wgz
 忘了	whl
-往后	whh
 往年	whn
 网盘	whp
 五花肉	whr
@@ -4706,7 +4706,7 @@ AA制	aav
 野人	yer
 也算	yes
 液态	yet
-也行	yex
+也许	yex
 一夫当关，万夫莫开	yfd
 一分货	yfh
 一分价钱一分货	yfj
@@ -4944,7 +4944,7 @@ AA制	aav
 自来水	zlu
 坐落在	zlz
 怎么办	zmb
-怎么打	zmd
+怎么读	zmd
 怎么搞	zmg
 怎么会	zmh
 怎么成	zmi
@@ -4979,7 +4979,7 @@ AA制	aav
 钻头	zrt
 钻石	zru
 自认为	zrw
-钻研	zry
+最容易	zry
 总裁	zsc
 总得	zsd
 总称	zsi
@@ -5098,9 +5098,6 @@ AA制	aav
 贼人	zwr
 贼窝	zww
 做一天和尚撞一天钟	zyt
-今	jba
-竹	vug
-智能ABC	vna
 前两个	qlg
 不在线	bzx
 罪人	zvr
