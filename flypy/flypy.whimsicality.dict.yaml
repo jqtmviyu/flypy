@@ -1,30 +1,36 @@
-# 随心   自定编码规则，零星调节重码或别扭码
+# 随心
 
 ---
 name: flypy.whimsicality
-version: "10.9.4"
+version: "10.9.c"
+sort: original
 use_preset_vocabulary: false
+columns:
+  - text
+  - code
 ...
 
-单元	dye
-记忆	jyx
+智	viud
+直到	vda
+哲理	vlw
+置顶	vdd
+指示	vue
 指挥	vhf
 回忆	hyx
-距离	jlw
-指示	vue
-哲理	vlw
-音形	yxk
-截至	jva
+想想	xxm
+单元	dye
+东	dsh
+梳理	ulw
+事实	uub
+食物	uwn
+辨	bmld
+辫	bmls
+计	jiyd
 觉得	jdi
 简洁	jjd
 精力	jlv
-梳理	ulw
-事实	uub
 基于	jya
-置顶	vdd
-想想	xxm
-智	viud
-计	jiyd
-辨	bmld
-辫	bmls
-东	dsh
+截至	jva
+距离	jlw
+记忆	jyx
+音形	yxk

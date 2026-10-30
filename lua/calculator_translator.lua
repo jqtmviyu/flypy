@@ -25,7 +25,8 @@
 -- - <rime> 替換爲RIME的共享目錄
 -- - <schema> 替換爲自己的方案ID
 -- - 如目錄／文件不存在，請自行創建
--- 定義全局函數、常數（注意命名空間污染）
+-- 计算器函数保存在模块环境中，避免覆盖 Rime 的 log 等全局对象。
+local _ENV = setmetatable({}, { __index = _G })
 cos = math.cos
 sin = math.sin
 tan = math.tan
@@ -354,7 +355,7 @@ local function serialize(obj)
         end
         str = str:len() > 3 and str:sub(0, -3) or str
         return str .. "}"
-    elseif pcall(obj) then -- function類型
+    elseif type == "function" then
         return "callable"
     end
     return obj
@@ -390,17 +391,29 @@ local function calculator_translator(input, seg)
     end
     -- yield(Candidate("number", seg.start, seg._end, expe, "展開"))
 
-    -- 防止危險操作，禁用os和io命名空間
-    if expe:find("i?os?%.") then
-        return
-    end
-    -- return語句保證了只有合法的Lua表達式才可執行
-    local result = load("return " .. expe)()
-    if result == nil then
-        return
-    end
+    -- 只开放计算函数，表达式无法访问系统调用、加载器和调试接口。
+    local scope = {}
+    for name, value in pairs(_ENV) do scope[name] = value end
+    scope.path = nil
+    scope.tonumber, scope.tostring = tonumber, tostring
+    scope.type, scope.ipairs, scope.pairs = type, ipairs, pairs
+    local chunk = load("return " .. expe, "calculator", "t", scope)
+    if not chunk then return end
 
-    result = serialize(result)
+    -- 每次计算限制 Lua 指令数，结束后恢复宿主原有的调试钩子。
+    local hook, mask, count = debug.gethook()
+    local ticks = 0
+    debug.sethook(function()
+        ticks = ticks + 1
+        if ticks >= 200 then error("计算量超出限制") end
+    end, "", 1000)
+    local ok, result = pcall(function()
+        local value = chunk()
+        if value ~= nil then return serialize(value) end
+    end)
+    debug.sethook(hook, mask, count)
+    if not ok or result == nil then return end
+
     yield(Candidate("number", seg.start, seg._end, exp .. "=" .. result, ""))
 end
 

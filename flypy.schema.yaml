@@ -4,7 +4,7 @@
 schema:
   schema_id: flypy
   name: 小鹤音形
-  version: "10.9.4"
+  version: "10.9.c"
   author:
     - 方案设计：何海峰 <flypy@qq.com>
   description: |
@@ -47,9 +47,9 @@ engine:
   translators:
     - punct_translator
     - table_translator
-    - lua_translator@*flypy_date_translator
-    - lua_translator@*flypy_time_translator
-    - lua_translator@*flypy_fast_translator
+    - lua_translator@*flypy_direct_translator
+    - lua_translator@*flypy_symbols_translator
+    - lua_translator@*flypy_poem_translator
     - reverse_lookup_translator
     - history_translator@history
     - lua_translator@*calculator_translator
@@ -109,7 +109,7 @@ key_binder:
     - { accept: "Shift_R", send: Escape, when: composing }
     # - {accept: "Shift+space", toggle: full_shape, when: always} #切换全半角
     - { accept: "Control+period", toggle: ascii_punct, when: always } #切换中英标点
-    - { accept: "Control+j", toggle: simplification, when: always } #切换简繁
+    - { accept: "Control+comma", toggle: simplification, when: always } #切换简繁
 
 recognizer:
   import_preset: default
@@ -122,7 +122,3 @@ recognizer:
 
 menu:
   page_size: 5 #候选项数
-
-style:
-  text_orientation: horizontal
-  candidate_list_layout: linear

@@ -2,8 +2,12 @@
 
 ---
 name: flypy.fast.symbols
-version: "10.9.4"
+version: "10.9.c"
+sort: original
 use_preset_vocabulary: false
+columns:
+  - text
+  - code
 ...
 
 ：	;
@@ -13,22 +17,21 @@ use_preset_vocabulary: false
 （	;e
 ）	;r
 @	;t
-《	;y
-》	;u
--	;i
+·	;y
+『』	;i
 「」	;o
-『』	;p
+～	;p
 ！	;a
 ……	;s
 、	;d
-·	;g
+《	;g
 《》	;h
 “”	;j
 （）	;k
-〔〕	;l
+〈〉	;l
 “	;z
 →	;x
 ”	;c
 ——	;v
-「	;n
-」	;m
+》	;b
+〔〕	;m

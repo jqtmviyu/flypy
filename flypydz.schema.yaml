@@ -4,7 +4,7 @@
 schema:
   schema_id: flypydz
   name: 小鹤音形反查
-  version: "10.9.4"
+  version: "10.9.c"
   author:
     - 方案设计：何海峰 <flypy@qq.com>
   description: |
@@ -52,6 +52,10 @@ speller:
     - derive/^([a-z]{2})[a-z]{2}$/$1``/               # aa``
     - derive/^([a-z]{2})[a-z]([a-z])$/$1`$2/          # aa`a
     - derive/^([a-z]{3})[a-z]$/$1`/                   # aaa`
+    # 反引号占一位，长度就是对应该码长的通配输入
+    - derive/^[a-z]$/`/                               # d -> `     一码
+    - derive/^([a-z])[a-z]$/$1`/                      # ui -> u`    二码
+    - derive/^([a-z]{2})[a-z]$/$1`/                   # uia -> ui`  三码
 
 translator:
   dictionary: flypydz

@@ -1,7 +1,13 @@
-# 用户置顶词库
+# 用户置顶词
 
 ---
 name: flypy.user.top
-version: "10.9.4"
+version: "10.9.c"
+sort: original
 use_preset_vocabulary: false
+columns:
+  - text
+  - code
 ...
+
+# 在下面添加词条，每行用 Tab 分隔词条和编码。
