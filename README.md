@@ -128,6 +128,8 @@ ascii_composer/switch_key:
 | `ovy` | 切换中英标点 |
 | `oqb` | 切换全半角 |
 | `ojf` | 切换简繁 |
+| `oqm` | 切换全码字 |
+| `oei` | 切换二重简码 |
 | `xhgw` | 打开小鹤官网 `https://flypy.cc` |
 | `xhwp` | 打开小鹤网盘 `https://flypy.ysepan.com` |
 | `xhrm` | 打开在线帮助 `https://flypy.cc/help/#/` |

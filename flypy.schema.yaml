@@ -24,6 +24,12 @@ switches:
   - name: simplification
     states: [简, 繁]
     reset: 0
+  - name: secondary_short_code
+    states: [二重简码关, 二重简码开]
+    reset: 1
+  - name: full_char
+    states: [全码字关, 全码字开]
+    reset: 0
   - name: ascii_punct
     states: [。，, ．，]
     reset: 1
@@ -54,6 +60,7 @@ engine:
     - history_translator@history
     - lua_translator@*calculator_translator
   filters:
+    - lua_filter@*flypy_dict_switch
     - simplifier
     - simplifier@simplification
     - uniquifier

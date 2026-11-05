@@ -5,6 +5,8 @@ local actions = {
     ovy = { label = "切换中英标点", option = "ascii_punct" },
     oqb = { label = "切换全半角", option = "full_shape" },
     ojf = { label = "切换简繁", option = "simplification" },
+    oqm = { label = "切换全码字", option = "full_char" },
+    oei = { label = "切换二重简码", option = "secondary_short_code" },
     xhgw = { label = "打开小鹤官网", url = "https://flypy.cc" },
     xhwp = { label = "打开小鹤网盘", url = "https://flypy.ysepan.com" },
     xhrm = { label = "打开小鹤入门", url = "https://flypy.cc/help/#/" },
